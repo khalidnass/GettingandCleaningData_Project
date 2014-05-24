@@ -128,8 +128,8 @@ for(i in 1:nrow(SubjectData))
  
 
 #11. Save both tables
-write.csv(dataset, "dataset.csv")
-write.csv(AvgDataSet, "AvgDataSet.csv")
+write.table(dataset, "dataset.txt")
+write.table(AvgDataSet, "groupActivitySubject.txt")
  
 close(subject_test_file)
 close(xtest_file)
